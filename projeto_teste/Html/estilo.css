@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*importando a fonte de texto do google fonts */
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4fd;
+    --cor-quartenaria: #068DA9;
+    --fonte-primaria: font-family: 'Krona One', sans-serif;
+    --fonte-secundaria: font-family: 'Montserrat', sans-serif;
+    --fonte-terciaria: font-family: "Libre Baskerville", serif;
+    --fonte-quartenaria: font-family: "Playfair Display", serif;
+}
+
+/*variaveis com as cores e fontes que usaremos no projeto - Aceito sugestões*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+header ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#button_menu {
+    padding: 10px;
+}
+
+#button_menu li {
+    display: inline;
+}
+
+/* Configuração Padrão - menu - estilo da fonte e cor da letra*/
+#button_menu li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    float: left;
+    padding: 18px;
+    background-color: var(--cor-quartenaria);
+    color: var(--cor-secundaria);
+    border-radius: 03px;
+    height: 30px;
+}
+
+/* Configuração Padrão - menu - cor ao passar o mouse sobre*/
+#button_menu li a:hover {
+    background-color: var(--cor-terciaria);
+    margin-top: -2px;
+    padding-bottom: 12px;
+}
+
+/* Configuração Padrão - menu - distância entre as opções dos menus*/
+#button_login_cadastro {
+    padding: 02px;
+}
+
+/* Configuração Padrão - menu */
+#button_login_cadastro li {
+    display: inline;
+}
+
+/* Configuração Padrão - menu */
+#button_login_cadastro li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    background-color: var(--cor-quartenaria);
+    color: var(--cor-secundaria);
+    border-radius: 02px
+}
+
+#button_login_cadastro li a:hover {
+    background-color: var(--cor-terciaria);
+    margin-top: -2px;
+    padding-bottom: 12px;
+}
+
+/* Configuração Padrão - Logo principal - configuração do tamanho logo*/
+.logo-apresentacao {
+    height: 100px;
+    padding-right: 30px;
+}
+
+/* Configuração Padrão - cabeçario principal - configuração da distância*/
+.cabecalho {
+    padding: 10% 0% 0% 20%;
+}
+
+
+/*Minha formatação*/
+body {
+    background-image: url(/img/fundo-azul.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.titulo {
+    line-height: 1.7em;
+    margin-left: 0.75em;
+    color: white;
+    font-family: Krona One, Arial, Arial, Helvetica, sans-serif;
+}
+
+.textfield {
+    padding: 20px;
+    width: 45%;
+}
+
+.textfield>p {
+    font-family: Krona One, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    text-align: start;
+    color: whitesmoke;
+    line-height: 1.8em;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container-img{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.img-redacao{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+}
+.img-estudante{
+    width: 50%;
+    height: 40%;
+    position: relative;
+    left: 5em;
+    top: 6em;
+}
+.main-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+    background-color: rgba(34, 212, 253, 0.6);
+    width: 300px;
+    height: 350px;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card>h3 {
+    margin: 6px;
+    font-size: 20px;
+}
+
+.card>p {
+    margin: 10px;
+}
+
+.card>a {
+    text-decoration: none;
+}
+
+.link01 {
+    position: relative;
+
+}
+
+.link02 {
+    position: relative;
+    top: 0.75em;
+}
+
+.link03 {
+    position: relative;
+    top: 1.5em;
+}
+
+.card>iframe {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    margin-left: 4%;
+    margin-top: 5%;
+    font-family: Krona One, Arial, Arial, Helvetica, sans-serif;
+    color: rgb(34, 212, 253)
+}
+
+.container02 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img02{
+    display: flex;
+    justify-content: right;
+    width: 90%;
+}
+.container02>p {
+    color: white;
+    font-family: Krona One, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-transform: capitalize;
+}
+
+
+.img03 {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.redacao1000 {
+    text-align: center;
+    color: white;
+    font-family: Krona one, Arial, Arial, Helvetica, sans-serif;
+}
+
+.rodape__pagina {
+    width: 100vw;
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    text-align: center;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
